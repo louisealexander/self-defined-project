@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    height: 1200px;
+}
+.nav-bar {
+    /* position: fixed; */
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    z-index: 1;
+    gap: 20px;
+    padding-left: 40px;
+    align-items: center;
+    /* border: 1px solid red ; */
+}
+.nav-text{
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat;
+}
+.page-title{
+    text-decoration: none;
+    font-family: Montserrat;
+    color: white;
+    font-size: 2rem;
+    padding-left: 40px;
+    border: 1px solid green ;
+}
+.project-tab-position{
+    width: 73%;
+    height: 200px;
+    top: 20px;
+    left: 30px;
+}
+
+/* LANDING PAGE */
+
+#landing-page{
+    color: white;
+}
+.sub-genre{
+    height: 300px;
+    bottom: 30px;
+}
+#sub-genres{
+    width: 73%;
+    height: 200px;
+    top: 250px;
+    left: 30px;
+}
+.sub-genres img{
+    max-width: 100%;
+}
+.frame-text{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-family: Montserrat;
+    /* opacity: 0; */
+    font-size: 3rem;
+    position: absolute;
+    height: 80px;
+    bottom: 0px;
+    left: 40px;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+}
+.frame-text:hover{
+    opacity: 1;
+}
+.relative{
+    position: relative;
+}
+/* #illustration-title{
+    top: 0;
+}
+#submission-title{
+    top: 150px;
+}
+#computing-title{
+    top: 300px;
+} */
+.image-styling{
+    object-fit: cover;
+}
+#header {
+    left: 30px;
+    color: white;
+    background-color: black;
+    z-index: 1;
+    font-size: 140px; /* Big font size */
+    font-family: Montserrat;
+    position: fixed; /* Fixed position - sit on top of the page */
+    top: 50px;
+    transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+#contacts-page{
+    left: 40px;
+}
+#contacts-page p{
+    font-family: Montserrat;
+    font-size: 1rem;
+    color: white;
+}
+#contact{
+    font-family: Montserrat;
+    color: white;
+    position: fixed;
+    font-size: 1.1rem;
+    text-align: right;
+    bottom: 20px;
+    right: 40px;
+}
+.cover-img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    z-index: 1;
+}
+.cover-img:hover {
+    opacity: 20%;
+    transition: opacity 1.5s;
+}
+.cover-img:not(:hover){
+    opacity: 100%;
+    transition: opacity 1.5s;
+}
+/* ABOUT ME PAGE */
+#container{
+    position: fixed
+}
+#about-me{
+    top: 150px;
+    color: white;
+}
+#about-me h1{
+    font-family: Montserrat;
+    padding-left: 40px;
+}
+#about-me p{
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+#about-contact{
+    font-family: Montserrat;
+    color: white;
+    position: fixed;
+    font-size: 1.1rem;
+    bottom: 20px;
+    left: 40px;
+}
+#aboutme-page-name{
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+/* COMPUTING PAGE */
+
+
+
+/* SUBMISSIONS */
+
+.main-placeholder{
+    display: flex;
+    flex-direction: row;
+}
+.text-placeholder h1{
+    font-family: Montserrat;
+    padding-left: 40px;
+    padding-top: 50px;
+}
+.text-placeholder h2{
+    font-family: Montserrat;
+    padding-left: 40px;
+}
+.text-placeholder p{
+    padding: 40px;
+    font-family: Montserrat;
+    font-size: 1rem;
+}
+.position-right-fixed{
+    flex-direction: column;
+    color: white;
+    position: fixed;
+    right: 0;
+    width: 40%;
+    top: 50px;
+}
+.position-right-scroll{
+    flex-direction: column;
+    color: white;
+    position: fixed;
+    width: 50%;
+    top: 50px;
+    right: 0;
+}
+.position-left-scroll{
+    flex-direction: column;
+    display: block;
+    width: 60%;
+    position: relative;
+}
+.position-left-fixed{
+    flex-direction: column;
+    display: block;
+    width: 50%;
+    position: fixed;
+    top: 50px;
+}
+#image-placeholder img { 
+    width: 100%;
+    display: block;
+}
+#submission-title{
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+/* ILLUSTRATION */
+
+.page-name{
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+.page-name-styling{
+    color: white;
+    font-family: Montserrat;
+    font-size: 3rem;
+    line-height: 50%;
+}
+.sub-genres-project{
+    width: 50%;
+    height: 200px;
+    left: 30px;
+}
+.gallery-styling{
+    top: 60px;
+}
+
+
+
+
+
